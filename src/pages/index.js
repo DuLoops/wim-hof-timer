@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import { Box, Button, Heading, Link, Text } from "@chakra-ui/react";
 import WHLanding from "@/components/WHLanding";
 import WHRunning from "@/components/WHRunning";
@@ -15,9 +15,6 @@ export default function WimHofTimer() {
     holdingTime: [60, 90, 120, 120, 150],
     inhaleHoldingTime: 15,
   });
-  useEffect(() => {
-    document.title = "Wim Hof Timer | DuLoops";
-  }, []);
 
   return (
     <Box>
